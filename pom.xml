@@ -73,18 +73,11 @@
     <!-- Dependencies -->
     <dependencies>
 
-        <!-- JUnit 5 for testing -->
+        <!-- JUnit 4 (Compatible with your existing test file) -->
         <dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter-api</artifactId>
-            <version>5.9.3</version>
-            <scope>test</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter-engine</artifactId>
-            <version>5.9.3</version>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.13.2</version>
             <scope>test</scope>
         </dependency>
 
@@ -104,14 +97,14 @@
                 </configuration>
             </plugin>
 
-            <!-- WAR Plugin (Updated for Java 17 compatibility) -->
+            <!-- WAR Plugin (Java 17 Compatible) -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-war-plugin</artifactId>
                 <version>3.4.0</version>
             </plugin>
 
-            <!-- Surefire Plugin (Test Execution) -->
+            <!-- Surefire Plugin -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
